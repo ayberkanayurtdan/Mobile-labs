@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iLogo"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:src="@mipmap/ic_logo_foreground" />
+
+    <EditText
+        android:id="@+id/eUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@+id/iLogo"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eUsername"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ePassword"
+        android:layout_marginTop="16dp"
+        android:text="Login"/>
+</RelativeLayout>
